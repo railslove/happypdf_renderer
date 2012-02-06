@@ -10,8 +10,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Lars Brillert"]
   s.email       = "lars@railslove.com"
   s.homepage    = "http://railslove.com"
-  s.summary     = "TODO: Summary of HappypdfRenderer."
-  s.description = "TODO: Description of HappypdfRenderer."
+  s.summary     = "Generate PDF documents with ease"
+  s.description = "HappypdfRenderer gives you an easy interface to happyPDF.com to generate PDF documents on-the-fly."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
