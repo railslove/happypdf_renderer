@@ -8,6 +8,7 @@ Rails.backtrace_cleaner.remove_silencers!
 
 # Configure capybara for integration testing
 require "capybara/rails"
+require "webmock/test_unit"
 Capybara.default_driver   = :rack_test
 Capybara.default_selector = :css
 

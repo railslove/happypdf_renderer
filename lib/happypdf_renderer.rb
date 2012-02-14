@@ -21,7 +21,7 @@ module HappypdfRenderer
       raise ArgumentError, "api_key is blank! Please set it properly!" unless HappypdfRenderer.api_key
 
       pdt_id = data.delete(:pdt_id)
-      self.get(HappypdfRenderer.api_endpoint, :query => {:pdt_id => pdt_id, :data => data}, :headers => {"X-Api-Token" => HappypdfRenderer.api_key})
+      self.get(HappypdfRenderer.api_endpoint, :query => {:pdt_id => pdt_id, :data => data, :api_key => HappypdfRenderer.api_key})
     end
   end
 end
