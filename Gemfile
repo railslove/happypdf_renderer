@@ -17,6 +17,8 @@ gem "jquery-rails"
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
 group :test do
+  gem "rspec-rails"
   gem "capybara", ">= 0.4.0"
   gem "webmock"
+  gem "pry-debugger"
 end
