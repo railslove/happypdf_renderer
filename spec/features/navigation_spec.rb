@@ -7,7 +7,6 @@ describe "format pdf send a pdf as file" do
     visit documents_path
     click_link "pdf"
 
-    binding.pry
     expect(page.response_headers['Content-Transfer-Encoding']).to eql 'binary'
     expect(page.response_headers['Content-Disposition']).to eql 'attachment; filename="documents.pdf"'
     expect(page.response_headers['Content-Type']).to eql 'application/pdf'
