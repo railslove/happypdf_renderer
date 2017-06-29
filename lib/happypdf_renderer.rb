@@ -30,5 +30,5 @@ Mime::Type.register "application/pdf", :pdf
 
 ActionController::Renderers.add :pdf do |filename, options|
   request = HappypdfRenderer::PDFRequest.show(options[:data])
-  send_data(request.body, :filename => "#{filename}.pdf", :type => Mime::PDF.to_s, :dispositon => "attachment")
+  send_data(request.body, :filename => "#{filename}.pdf", :type => Mime[:pdf].to_s, :dispositon => "attachment")
 end
